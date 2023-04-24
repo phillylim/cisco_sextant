@@ -3,6 +3,7 @@ import './App.css';
 
 import Banner from "./Banner"; 
 import Exhibit from "./Exhibit";
+import IPAddress from "./getip.js";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         
       <Banner title="Sextant" />
       <Exhibit title="INFO">
-        <p>Hello WOrld!</p>
+      <div><p> IPv4: </p><IPAddress type = "v4"></IPAddress></div>
+      <div><p> IPv6: </p><IPAddress type = "v6"></IPAddress></div>
       </Exhibit>
       </header>
     </div>
